@@ -1,0 +1,71 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'mixins/css3';
+
+body { background-color: #f5f5f5;}
+
+.home-logo {
+  background: image-url('farrah-logo.png') no-repeat;
+  width: 455px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  margin-top: -58px;
+  margin-bottom: -12px;
+}
+
+.entourage-image {
+  background: image-url('entourage_filter.jpg') no-repeat 56%;
+  background-color: black;
+  height: 536px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-top: 2px solid #888;
+  border-bottom: 2px solid #888;
+  @include box-shadow(0px, 7px, 10px, -1px, #999);
+  
+}
+
+.farrah-button {
+  @include linear-gradient-bg(#3A99EF, #2080D5);
+  @include box-round(4px);
+  display: inline-block;
+  color: #eee;
+  font-size: 15px;
+  font-weight: 200;
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #0B345C;
+  width: 115px;
+  cursor: pointer;
+  border: 1px solid #666;
+  @include box-shadow(0px, 5px, 11px, -3px, #f5f5f5, inset);
+  font-family: 'dosis', Helvetica, Arial;
+  margin-top: -9px;
+  margin-left: 2px;
+  &:hover {
+    text-decoration: none;
+    color: white;
+    @include linear-gradient-bg(#61ADF2, #3A99EF);
+  }
+}
+
+.subscriber-box {
+  margin-top: 20px;
+}
+
+.subscriber-text {
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-family: 'dosis', Helvetica, Arial;
+}
+
+.subscriber-input {
+  height: 30px;
+  font-size: 16px;
+  width: 215px;
+  font-family: 'dosis', Helvetica, Arial;
+}
