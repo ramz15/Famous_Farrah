@@ -12,6 +12,9 @@ end
 module Farrah
   class Application < Rails::Application
     
+    # config for middleware for redirect to www
+    config.autoload_paths += %W( #{ config.root }/lib/middleware )
+    
     # to fix could not connect to server: Connection refused heroku errors
     config.assets.initialize_on_precompile = false
     
