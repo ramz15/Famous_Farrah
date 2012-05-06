@@ -25,47 +25,57 @@ body { background-color: #f5f5f5;}
   margin-bottom: 30px;
   border-top: 2px solid #888;
   border-bottom: 2px solid #888;
-  @include box-shadow(0px, 7px, 10px, -1px, #999);
+  @include box-shadow(0px, 2px, 10px, 3px, #999);
   
 }
 
 .farrah-button {
-  @include linear-gradient-bg(#3A99EF, #2080D5);
+  @include linear-gradient-bg(#F19F3D, #ED870C);
+//  @include linear-gradient-bg(#3A99EF, #2080D5 );
   @include box-round(4px);
   display: inline-block;
   color: #eee;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 200;
   padding: 10px 10px 10px 10px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #0B345C;
-  width: 115px;
+  width: 155px;
   cursor: pointer;
-  border: 1px solid #666;
+  border: 1px solid #999;
   @include box-shadow(0px, 5px, 11px, -3px, #f5f5f5, inset);
-  font-family: 'dosis', Helvetica, Arial;
+  font-family: 'dosis', Helvetica, Arial;  
   margin-top: -9px;
   margin-left: 2px;
   &:hover {
     text-decoration: none;
     color: white;
-    @include linear-gradient-bg(#61ADF2, #3A99EF);
+    @include linear-gradient-bg(#F4B264, #F19F3D);
   }
 }
 
 .subscriber-box {
-  margin-top: 20px;
+  margin: 0 auto;
+  width: 475px;
 }
 
 .subscriber-text {
-  margin-bottom: 7px;
-  font-size: 14px;
+  margin-bottom: 10px;
+  font-size: 18px;
   font-family: 'dosis', Helvetica, Arial;
+  margin-left: 23px;
 }
 
 .subscriber-input {
   height: 30px;
   font-size: 16px;
-  width: 215px;
+  width: 225px;
   font-family: 'dosis', Helvetica, Arial;
+  padding-left: 10px;
 }
+
+#new_subscriber {
+  margin: 0 auto;
+  width: 411px;
+}
+

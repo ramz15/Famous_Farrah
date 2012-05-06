@@ -9,7 +9,7 @@
 
 
 <div class="row">
-  <div class="span4 offset4">
+  <div class="subscriber-box">
     <div id="subscriber-box">
 
       <div class="subscriber-text">
@@ -17,9 +17,9 @@
       </div>
 
       <%= form_for(@subscriber) do |f| %>
-        <%= f.text_field :email, { :class => 'subscriber-input', :placeholder => 'Email' } %>
+        <%= f.text_field :email, { :class => 'subscriber-input', :placeholder => 'Email Address' } %>
         <%= content_tag :button, :type => :submit, :class => 'farrah-button' do %>
-           <span>BE FAMOUS</span>
+           <span>Join the Entourage</span>
         <% end %>
       <% end %>
       <div id="messages">
