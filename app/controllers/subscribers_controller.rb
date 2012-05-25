@@ -4,7 +4,7 @@ class SubscribersController < ApplicationController
 
     if @subscriber.save
       success = true
-      message = "Thanks for the support!"
+      message = "Welcome to the crew. YOLO. #CakeBoyz"
     else
       success = false
       message = "Duplicate or invalid email. Please try again."
