@@ -31,7 +31,7 @@ body { background-color: #FFF;}
 }
 
 .entourage-image {
-  background: image-url('entourage_filter.jpg') no-repeat 56%;
+  background: image-url('entourage_no_chin.jpg') no-repeat 56%;
   background-color: black;
   height: 536px;
   display: block;
@@ -43,11 +43,11 @@ body { background-color: #FFF;}
 }
 
 .farrah-button {
-  @include linear-gradient-bg(#F19F3D, #ED870C);
+  @include linear-gradient-bg(#F9C, #FFADEB);
 //  @include linear-gradient-bg(#3A99EF, #2080D5 );
   @include box-round(4px);
   display: inline-block;
-  color: #eee;
+  color: white;
   font-size: 18px;
   font-weight: 200;
   padding: 10px 10px 10px 10px;
@@ -55,7 +55,7 @@ body { background-color: #FFF;}
   text-shadow: 0px 1px 0px #0B345C;
   width: 155px;
   cursor: pointer;
-  border: 1px solid #999;
+  border: 1px solid #F39;
   @include box-shadow(0px, 5px, 11px, -3px, #f5f5f5, inset);
   font-family: 'dosis', Helvetica, Arial;  
   margin-top: -9px;
@@ -63,7 +63,7 @@ body { background-color: #FFF;}
   &:hover {
     text-decoration: none;
     color: white;
-    @include linear-gradient-bg(#F4B264, #F19F3D);
+    @include linear-gradient-bg(#FFADEB, #FFBDEF);
   }
 }
 
